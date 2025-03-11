@@ -13,8 +13,8 @@ class SearchVC: UIViewController {
     let usernameTextField = GFTextField()
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get folowers")
 
-    var isUserNameEntered: Bool {
-        return !usernameTextField.text!.isEmpty
+    var isUserNameValid: Bool {
+        return !usernameTextField.text!.isValidGithubUsername
     }
 
     override func viewDidLoad() {
@@ -38,10 +38,10 @@ class SearchVC: UIViewController {
     }
     
     @objc func pushFollowerListVC() {
-        guard isUserNameEntered else {
+        guard isUserNameValid else {
             presentGFAlertOnMainThread(
-                title: "Empty username",
-                message: "Please enter a username. We need to know who to look for.",
+                title: "Invalid username",
+                message: "Please enter a valid Github username. We need to know who to look for.",
                 buttonTitle: "Ok"
             )
             return
