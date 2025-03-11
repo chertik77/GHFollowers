@@ -1,0 +1,100 @@
+{
+  "" : {
+    "const-values" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GHFollowers-master.swiftconstvalues",
+    "dependencies" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GHFollowers-master.d",
+    "diagnostics" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GHFollowers-master.dia",
+    "emit-module-dependencies" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GHFollowers-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GHFollowers-master-emit-module.dia",
+    "swift-dependencies" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GHFollowers-master.swiftdeps"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Custom Views/GFAlertContainerView.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFAlertContainerView.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFAlertContainerView.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFAlertContainerView.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Custom Views/GFAlertVC.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFAlertVC.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFAlertVC.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFAlertVC.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Custom Views/GFBodyLabel.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFBodyLabel.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFBodyLabel.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFBodyLabel.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Custom Views/GFButton.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFButton.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFButton.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFButton.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Custom Views/GFTextField.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFTextField.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFTextField.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFTextField.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Custom Views/GFTitleLabel.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFTitleLabel.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFTitleLabel.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GFTitleLabel.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Extenstions/String+Ext.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/String+Ext.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/String+Ext.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/String+Ext.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Extenstions/UIViewController+Ext.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/UIViewController+Ext.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/UIViewController+Ext.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/UIViewController+Ext.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Managers/NetworkManager.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/NetworkManager.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/NetworkManager.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/NetworkManager.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Model/Follower.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/Follower.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/Follower.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/Follower.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Model/User.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/User.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/User.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/User.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Screens/FavoritesListVC.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/FavoritesListVC.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/FavoritesListVC.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/FavoritesListVC.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Screens/FollowerListVC.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/FollowerListVC.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/FollowerListVC.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/FollowerListVC.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Screens/SearchVC.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/SearchVC.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/SearchVC.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/SearchVC.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Support/AppDelegate.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Support/SceneDelegate.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/SceneDelegate.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/GHFollowers/Utilities/ErrorMessage.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/ErrorMessage.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/ErrorMessage.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/ErrorMessage.o"
+  },
+  "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/chertik/Desktop/GHFollowers/build/GHFollowers.build/Release-iphoneos/GHFollowers.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}
