@@ -20,7 +20,7 @@ class FollowerListVC: UIViewController {
             guard let followers else {
                 self.presentGFAlertOnMainThread(
                     title: "Bad Stuff Happened",
-                    message: errorMessage!,
+                    message: errorMessage!.rawValue,
                     buttonTitle: "Ok"
                 )
                 return
