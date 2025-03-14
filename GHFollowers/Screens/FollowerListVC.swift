@@ -9,9 +9,7 @@ import UIKit
 
 class FollowerListVC: UIViewController {
 
-    enum Section {
-        case main
-    }
+    enum Section { case main }
 
     var username: String!
     var followers: [Follower] = []
