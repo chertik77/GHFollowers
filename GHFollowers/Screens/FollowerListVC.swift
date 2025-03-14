@@ -53,7 +53,10 @@ class FollowerListVC: UIViewController {
     }
     
     func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
+        collectionView = UICollectionView(
+            frame: view.bounds,
+            collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view)
+        )
         
         view.addSubview(collectionView)
         
@@ -66,7 +69,10 @@ class FollowerListVC: UIViewController {
             collectionView: collectionView,
             cellProvider: { collectionView, indexPath, follower in
         
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseId, for: indexPath) as! FollowerCell
+            let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: FollowerCell.reuseId,
+                for: indexPath
+            ) as! FollowerCell
             
             cell.set(follower: follower)
                 
