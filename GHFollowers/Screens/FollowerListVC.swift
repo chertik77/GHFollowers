@@ -53,7 +53,7 @@ class FollowerListVC: UIViewController {
     }
     
     func configureCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
         
         view.addSubview(collectionView)
         
@@ -61,27 +61,11 @@ class FollowerListVC: UIViewController {
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseId)
     }
     
-    func createThreeColumnFlowLayout() -> UICollectionViewFlowLayout {
-        let totalColumns: CGFloat = 3
-        let width = view.bounds.width
-        let padding: CGFloat = 12
-        let minItemSpacing: CGFloat = 10
-        
-        let availableWidth = width - (padding * 2) - (minItemSpacing * 2)
-        let itemWidth = availableWidth / totalColumns
-        
-        let flowLayout = UICollectionViewFlowLayout()
-        
-        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 40)
-        
-        return flowLayout
-    }
-    
     func configureDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section, Follower>(
             collectionView: collectionView,
             cellProvider: { collectionView, indexPath, follower in
+        
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseId, for: indexPath) as! FollowerCell
             
             cell.set(follower: follower)
