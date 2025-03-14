@@ -9,7 +9,7 @@ import Foundation
 
 extension String {
     var isValidGithubUsername: Bool {
-        let usernameFormat = "/^[a-z\\-d](?:[a-z\\-d]|-(?=[a-z\\-d])){0,38}$/i"
+        let usernameFormat = "^[a-zA-Z\\d](?:[a-zA-Z\\d]|-(?=[a-zA-Z\\d])){0,38}$"
         let usernamePredicate = NSPredicate(format: "SELF MATCHES %@", usernameFormat)
         
         return usernamePredicate.evaluate(with: self)

@@ -14,7 +14,7 @@ class SearchVC: UIViewController {
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get folowers")
 
     var isUserNameValid: Bool {
-        return !usernameTextField.text!.isValidGithubUsername
+        return usernameTextField.text!.isValidGithubUsername
     }
 
     override func viewDidLoad() {
