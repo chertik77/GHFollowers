@@ -26,8 +26,9 @@ class FollowerListVC: UIViewController {
         configureCollectionView()
         configureDataSource()
         
-        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
-            
+        NetworkManager.shared.getFollowers(for: username, page: 1) { [weak self] result in
+            guard let self = self else { return }
+        
             switch result {
             case .success(let followers):
                 self.followers = followers
