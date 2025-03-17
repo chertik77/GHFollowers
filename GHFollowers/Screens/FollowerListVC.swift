@@ -13,33 +13,18 @@ class FollowerListVC: UIViewController {
 
     var username: String!
     var followers: [Follower] = []
+    var page = 1
+    var hasMoreFollowers = true
     
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         configureViewController()
         configureCollectionView()
         configureDataSource()
-        
-        NetworkManager.shared.getFollowers(for: username, page: 1) { [weak self] result in
-            guard let self = self else { return }
-        
-            switch result {
-            case .success(let followers):
-                self.followers = followers
-                self.updateData()
-        
-            case.failure(let error):
-                self.presentGFAlertOnMainThread(
-                    title: "Bad Stuff Happened",
-                    message: error.rawValue,
-                    buttonTitle: "Ok"
-                )
-            }
-        }
+        getFollowers(username: username, page: page)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,6 +44,8 @@ class FollowerListVC: UIViewController {
         )
         
         view.addSubview(collectionView)
+        
+        collectionView.delegate = self
         
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseId)
@@ -80,6 +67,26 @@ class FollowerListVC: UIViewController {
         })
     }
     
+    func getFollowers(username: String, page: Int) {
+        NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
+            guard let self = self else { return }
+        
+            switch result {
+            case .success(let followers):
+                if followers.count < 100 { self.hasMoreFollowers = false }
+                self.followers.append(contentsOf: followers)
+                self.updateData()
+        
+            case.failure(let error):
+                self.presentGFAlertOnMainThread(
+                    title: "Bad Stuff Happened",
+                    message: error.rawValue,
+                    buttonTitle: "Ok"
+                )
+            }
+        }
+    }
+    
     func updateData() {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
         
@@ -87,5 +94,20 @@ class FollowerListVC: UIViewController {
         snapshot.appendItems(followers)
         
         dataSource.apply(snapshot, animatingDifferences: true)
+    }
+}
+
+extension FollowerListVC: UICollectionViewDelegate {
+
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHight = scrollView.contentSize.height
+        let height = scrollView.frame.size.height
+        
+        if offsetY > contentHight - height {
+            guard hasMoreFollowers else { return }
+            page += 1
+            getFollowers(username: username, page: page)
+        }
     }
 }
